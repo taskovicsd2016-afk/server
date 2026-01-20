@@ -1,0 +1,39 @@
+name: HelloPlugin
+main: com.example.helloplugin.HelloPlugin
+version: 1.0.0
+api-version: '1.20'
+depend: [WorldGuard]
+commands:
+  hello:
+    description: Köszön a játékosnak.
+    usage: /hello
+  online:
+    description: Megmutatja az online játékosok játékidejét.
+    usage: /online
+  ora:
+    description: Megmutatja egy játékos játékidejét és utolsó belépését.
+    usage: /ora <játékosnév>
+  ban:
+    description: Játékos kitiltása indokkal.
+    usage: /ban <játékosnév> [indok]
+  tempban:
+    description: Időszakos kitiltás indokkal.
+    usage: /tempban <játékosnév> <idő> [indok]
+  jatekos:
+    description: Megmutatja a játékoshoz tartozó más karaktereket és azok tiltási státuszát.
+    usage: /jatekos <játékosnév>
+  leved:
+    description: Terület levédése saját névre.
+    usage: /leved
+  torles:
+    description: Saját terület törlése.
+    usage: /torles
+  setotthon:
+    description: Otthon beállítása a saját területen.
+    usage: /setotthon
+  otthon:
+    description: Teleportálás a saját vagy barát területére.
+    usage: /otthon [név]
+  barat:
+    description: Barát hozzáadása vagy listázás.
+    usage: /barat hozzaadas <név> | /barat
